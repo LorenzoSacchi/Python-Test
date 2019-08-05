@@ -32,6 +32,10 @@ class MyTests(unittest.TestCase):
 #        self.assertTrue(type(b) == int)
 #        #self.assertTrue(type(basicfile.uselessmath(a,b)) == int) 
 
+    @classmethod
+    def example():
+        pass
+
     def test_type(self):
         for i in range(0,20):
             with self.subTest( num = i):
@@ -39,7 +43,7 @@ class MyTests(unittest.TestCase):
     
     def test_library(self):
         a = basicfile.uselessmath(5,5)
-        self.assertEqual(type(a), int)
+        self.assertEqual(type(a), str)
 
 
 if __name__ == "__main__":
