@@ -29,12 +29,18 @@ class MyTests(unittest.TestCase):
 #    def test_type_b(self):
 #        b = 4
 #        self.assertTrue(type(b) == int)
-#        #self.assertTrue(type(basicfile.uselessmath(a,b)) == int) 
+#        #self.assertTrue(type(basicfile.uselessmath(a,b)) == int)				
+    @classmethod
+    def run_always(cls):
+    	#this runs at class level, not object
+    	pass
+    	
 
+				
     def test_type(self):
-        for i in range(0,20):
+        for i in range(0,5):
             with self.subTest( num = i):
-                self.assertEqual(type(i), str)
+                self.assertEqual(type(i), int)
 
 
 if __name__ == "__main__":
