@@ -1,18 +1,18 @@
 ---
-  
+
 - people:
-  - Kash:
-      gender: male
-  - Kevin
-  - Lorenzo:
-      gender: male
-      age: 38
+    - Kash:
+        gender: male
+    - Kevin
+    - Lorenzo:
+        gender: male
+        age: 38
 
 - fruits: |
     Apple
     Orange
     Peach
-  
+
 - True
 
 - 12

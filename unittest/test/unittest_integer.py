@@ -4,9 +4,10 @@
 import os, sys
 import unittest
 
+
+
 #my files to test
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 import basicfile
 
 #insert path: 
@@ -41,6 +42,10 @@ class MyTests(unittest.TestCase):
         for i in range(0,5):
             with self.subTest( num = i):
                 self.assertEqual(type(i), int)
+    
+    def test_library(self):
+        a = basicfile.uselessmath(5,5)
+        self.assertEqual(type(a), str)
 
 
 if __name__ == "__main__":
